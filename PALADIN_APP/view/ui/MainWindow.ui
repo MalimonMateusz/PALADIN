@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 8pt &quot;Garamond&quot;;
+background-color: rgb(30, 58, 138);
+background-color: rgb(54, 54, 54);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>50</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 215, 0);
+font-size:33pt;
+font-weight: 700;
+
+font: 75 16pt &quot;Times New Roman&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>Logged As: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userNameLabel">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>50</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(255, 215, 0);
+font-size:33pt;
+font-weight: 700;
+
+font: 75 16pt &quot;Times New Roman&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addNewPasswordButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>240</y>
+      <width>281</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #3498db;
+    color: white;
+    border-radius: 40px;  /* Połowa szerokości/wysokości */
+    font-size: 18px;
+    width: 80px;  
+    height: 80px;  
+	color:rgb(255, 215, 0);
+	background-color: rgb(44, 44, 44);
+
+}
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #1c6ea4;
+}</string>
+    </property>
+    <property name="text">
+     <string>Add New Password</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="logOutButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>340</y>
+      <width>281</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #3498db;
+    color: white;
+    border-radius: 40px;  /* Połowa szerokości/wysokości */
+    font-size: 18px;
+    width: 80px;  
+    height: 80px;  
+	color:rgb(255, 215, 0);
+	background-color: rgb(44, 44, 44);
+
+}
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #1c6ea4;
+}</string>
+    </property>
+    <property name="text">
+     <string>Log out</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>481</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../../photos/paladin.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>120</y>
+      <width>401</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> QWidget {
+                background-color: #121212;
+                color: #E0E0E0;
+                font-size: 20px;
+				border: none; 
+   				outline: 0;
+            }
+            QListWidget {
+                background-color: #1E1E1E;
+                border: 1px solid #333;
+                padding: 5px;
+                border-radius: 8px;
+            }
+            QListWidget::item {
+                padding: 8px;
+                border-radius: 5px;
+				aligment: center;
+            }
+            QListWidget::item:selected {
+                background-color: #BB86FC;
+                color: white;
+            }
+            QPushButton {
+                background-color: #BB86FC;
+                border: none;
+                padding: 10px;
+                border-radius: 8px;
+                font-size: 14px;
+            }
+            QPushButton:hover {
+                background-color: #9A67EA;
+            }
+            QLineEdit {
+                background-color: #1E1E1E;
+                border: 1px solid #333;
+                padding: 8px;
+                border-radius: 8px;
+            }
+</string>
+    </property>
+    <property name="showDropIndicator" stdset="0">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
